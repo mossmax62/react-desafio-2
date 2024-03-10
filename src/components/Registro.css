@@ -1,8 +1,9 @@
 .registro{
+
     height: 80vh;
-    padding: 50px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }

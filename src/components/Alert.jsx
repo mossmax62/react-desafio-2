@@ -1,7 +1,7 @@
 
 const Alert = ({ message,color }) => {  
     return (
-        <div style={{margin:'5px'}} >
+        <div  >
         <div className={color}>
         <p>{message}</p>
     </div>
