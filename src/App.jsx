@@ -4,6 +4,7 @@ import Registro from "./components/Registro"
 import SocialButton from "./components/SocialButton"
 import { useState } from "react"
 import { Container, Row, Col } from "react-bootstrap"
+import './App.css';
 function App() {
   const [alert, setAlert] = useState({
     message: "",
@@ -13,12 +14,11 @@ function App() {
   return (
     <>
       
-        <Row>
+        <Row >
         <Col></Col>
-          <Col xs={6}>
+          <Col xs={6} className="app">
         <Registro>
-          <h1>Registro de usuarios</h1>
-
+          <h1>Crea una cuenta</h1>
         </Registro>
         </Col>
         <Col></Col>

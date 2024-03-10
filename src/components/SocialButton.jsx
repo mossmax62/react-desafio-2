@@ -5,15 +5,15 @@ const SocialButton = (props)=>{
     let icono = props.icono;
     if(icono === "facebook"){
         return(
-            <Icon.Facebook color="blue" size={50}/>
+            <Icon.Facebook  size={30}/>
         );
     }else if(icono === "twitter"){
         return(
-            <Icon.Twitter color="blue" size={50}/>
+            <Icon.Twitter  size={30}/>
         );
     }else if(icono === "instagram"){
         return(
-            <Icon.Instagram color="blue" size={50}/>
+            <Icon.Instagram  size={30}/>
         );
     }
 }

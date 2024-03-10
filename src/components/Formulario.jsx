@@ -29,26 +29,26 @@ const Formulario = ({setError}) => {
             {/* {error && <Alert variant="alert alert-danger"> No puede estar vacio</Alert>} */}
             <h1>Formulario</h1>
             <div className="mb-3">
-            <label htmlFor="exampleInputName" className="form-label">Name</label>
-            <input type="text" className="form-control" id="exampleInputName" aria-describedby="nameHelp" 
+
+            <input type="text" className="form-control" id="exampleInputName" aria-describedby="nameHelp"
+            placeholder="Ingrese Nombre" 
             onChange={(event)=>{setNombre(event.target.value)}}/>
 
             </div>
             <div className="mb-3">
-            <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-            
+            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese EMail" />
             </div>
             <div className="mb-3">
-            <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-            <input type="password" className="form-control" id="exampleInputPassword1" />
+            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Ingrese Password"/>
             </div>
             <div className="mb-3">
-            <label htmlFor="exampleInputPassword2" className="form-label">Password</label>
-            <input type="password" className="form-control" id="exampleInputPassword2" />
+            <input type="password" className="form-control" id="exampleInputPassword2" 
+            placeholder="Reingrese Password"/>
             </div>
-            <button type="submit" className="btn btn-primary" 
-            >Submit</button>
+            <div className="mb-3">
+            <button type="button" className="btn btn-success btn-block"  
+            >Registrate</button>
+            </div>
         </form>
         </>
         )

@@ -1,3 +1,4 @@
+
 const Alert = ({ message,color }) => {  
     return (
         <div className={color}>
