@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Alert } from "react-bootstrap";
 import './Formulario.css';
+import { Button } from "react-bootstrap";
 const Formulario = ({setError}) => {
 
     const [nombre, setNombre] = useState("");
@@ -25,7 +26,7 @@ const Formulario = ({setError}) => {
     return (
         <>
         {/* <h1>{nombre}</h1> */}
-        <form onSubmit={ValidarQueNoEsteVacio} className="form">
+        <form onSubmit={ValidarQueNoEsteVacio}>
             {/* {error && <Alert variant="alert alert-danger"> No puede estar vacio</Alert>} */}
             <h1>Formulario</h1>
             <div className="mb-3">
@@ -33,7 +34,6 @@ const Formulario = ({setError}) => {
             <input type="text" className="form-control" id="exampleInputName" aria-describedby="nameHelp"
             placeholder="Ingrese Nombre" 
             onChange={(event)=>{setNombre(event.target.value)}}/>
-
             </div>
             <div className="mb-3">
             <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese EMail" />
@@ -45,9 +45,9 @@ const Formulario = ({setError}) => {
             <input type="password" className="form-control" id="exampleInputPassword2" 
             placeholder="Reingrese Password"/>
             </div>
-            <div className="mb-3">
-            <button type="button" className="btn btn-success btn-block"  
-            >Registrate</button>
+            <div className="d-grid">
+            <Button variant="primary"   
+            >Registrate</Button>
             </div>
         </form>
         </>

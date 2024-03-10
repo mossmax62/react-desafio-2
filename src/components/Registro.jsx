@@ -4,7 +4,7 @@ import SocialButton from './SocialButton';
 import Alert from './Alert';
 import './Registro.css';
 const Registro = () => {
-    const [error, setError] = useState()
+    const [error, setError] = useState(false)
     return (
         <>
 <div className="d-flex justify-content-center registro">
@@ -14,7 +14,7 @@ const Registro = () => {
      </div>
     <Formulario setError={setError} ></Formulario>
    {error? <Alert color="alert alert-danger" message={"No puede estar vacio"}></Alert>: null}
-   
+
    {!error? <Alert color="alert alert-success" message={"Registro OK"}></Alert>: null}
    </>
     )
