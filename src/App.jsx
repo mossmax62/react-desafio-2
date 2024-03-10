@@ -10,7 +10,7 @@ function App() {
     message: "",
     color: ""
   })
-  const [error, setError] = useState(false)
+  /* const [error, setError] = useState(false) */
   return (
     <>
       
